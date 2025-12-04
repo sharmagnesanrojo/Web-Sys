@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Login – L’Empire GrabCoffee">
+  <title>Login – L’Empire GrabCoffee</title>
+
+  <style>
+    /* ---- Global ---- */
+    body {
+      margin: 0;
+      padding: 0;
+      background: #FAF9F6;
+      font-family: system-ui, -apple-system, sans-serif;
+      color: #2f1b01;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* ---- Container ---- */
+    .login-container {
+      background: white;
+      width: 400px;
+      padding: 40px;
+      border-radius: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      text-align: center;
+      position: relative;
+    }
+
+    /* Back button */
+    .back-btn {
+      position: absolute;
+      top: 18px;
+      left: 18px;
+      cursor: pointer;
+      width: 32px;
+    }
+
+    /* Branding */
+    .logo-img {
+      width: 120px;
+      margin-bottom: 14px;
+    }
+
+    .brand-title {
+      font-size: 26px;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .tagline {
+      font-size: 14px;
+      opacity: 0.7;
+      margin-bottom: 30px;
+    }
+
+    /* ---- Inputs ---- */
+    .input-field {
+      width: 100%;
+      padding: 14px;
+      margin: 10px 0;
+      border-radius: 10px;
+      border: 2px solid #d6c9b6;
+      font-size: 15px;
+      outline: none;
+      background: #fff;
+    }
+
+    .input-field:focus {
+      border-color: #a67a40;
+    }
+
+    /* ---- Login Button ---- */
+    .login-btn {
+      margin-top: 20px;
+      width: 100%;
+      padding: 14px;
+      background: #2f1b01;
+      color: #fff;
+      border-radius: 30px;
+      font-size: 18px;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
+      transition: 0.3s ease;
+    }
+
+    .login-btn:hover {
+      background: #63431a;
+      transform: translateY(-2px);
+    }
+
+    /* ---- Bottom links ---- */
+    .small-link {
+      margin-top: 12px;
+      font-size: 14px;
+      opacity: 0.7;
+      cursor: pointer;
+    }
+
+    .register-link {
+      font-weight: 600;
+      color: #2f1b01;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="login-container">
+
+  <!-- Back to Home -->
+  <a href="landing-page.html">
+    <img src="images/icon-42.svg" class="back-btn" alt="Back">
+  </a>
+
+  <!-- Logo -->
+  <img src="images/node-29.png" class="logo-img" alt="Logo">
+
+  <h1 class="brand-title">L’Empire GrabCoffee</h1>
+  <p class="tagline">Your taste bud’s new best friend</p>
+
+  <!-- Title -->
+  <h2>Login</h2>
+
+  <!-- Form -->
+  <input type="text" class="input-field" placeholder="Username">
+  <input type="email" class="input-field" placeholder="Email">
+  <input type="password" class="input-field" placeholder="Password">
+
+  <p class="small-link">Forgot Password?</p>
+
+  <!-- Login Button -->
+  <a href="dashboard.html" class="login-btn">Login</a>
+
+  <!-- Register -->
+  <p class="small-link">
+    Don’t have an account?
+    <a href="register.html" class="register-link">Register</a>
+  </p>
+
+</div>
+
+</body>
+</html>

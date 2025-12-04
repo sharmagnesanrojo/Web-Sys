@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Interactive Prototype Legend – L’Empire GrabCoffee" />
+  <title>Prototype Legend – L’Empire GrabCoffee</title>
+
+  <style>
+    /* -------------------- Global Styles -------------------- */
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #FAF9F6;
+      color: #321F01;
+      padding: 40px;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    /* -------------------- Container -------------------- */
+    .modal-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: white;
+      padding: 40px;
+      border-radius: 24px;
+      box-shadow: 0 10px 30px rgba(50, 31, 1, 0.1);
+      animation: fadeIn 0.6s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* -------------------- Grid -------------------- */
+    .legend-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 32px;
+    }
+
+    /* -------------------- Item -------------------- */
+    .legend-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 16px;
+      border-radius: 18px;
+      background: #FEFEE5;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(50, 31, 1, 0.1);
+    }
+
+    .legend-item:hover {
+      transform: translateY(-4px);
+      background: #fff;
+      border-color: rgba(50, 31, 1, 0.25);
+      box-shadow: 0 6px 20px rgba(50, 31, 1, 0.08);
+    }
+
+    .icon {
+      width: 48px;
+      height: 48px;
+      flex-shrink: 0;
+    }
+
+    .text-label {
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    /* -------------------- Button -------------------- */
+    .prototype-btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 240px;
+      height: 60px;
+      margin-top: 40px;
+      border-radius: 30px;
+      background: #321F01;
+      color: #FEFEE5;
+      font-size: 18px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .prototype-btn:hover {
+      background: #55390A;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(50, 31, 1, 0.2);
+    }
+
+    /* -------------------- Footer -------------------- */
+    .by-line {
+      margin-top: 50px;
+      text-align: center;
+      opacity: 0.7;
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="modal-container">
+
+  <h1>Prototype Interaction Legend</h1>
+  <p style="opacity: 0.7;">Click on the button below to explore the live prototype</p>
+
+  <div class="legend-grid">
+
+    <!-- Register -->
+    <div class="legend-item">
+      <svg class="icon" viewBox="0 0 41 42" fill="none">
+        <ellipse cx="20.5" cy="21" rx="20.5" ry="21" fill="#FEFEE5"/>
+        <path d="M20.5 2.5C30.3847 2.5 38.5 10.7256 38.5 21C38.5 31.2744 30.3847 39.5 20.5 39.5C10.6153 39.5 2.5 31.2744 2.5 21C2.5 10.7256 10.6153 2.5 20.5 2.5Z"
+              stroke="#321F01" stroke-opacity="0.46" stroke-width="5"/>
+      </svg>
+      <p class="text-label">Register: “Register lets new users create an account by providing required information.”</p>
+    </div>
+
+    <!-- Dropdown -->
+    <div class="legend-item">
+      <svg class="icon" viewBox="0 0 41 42" fill="none">
+        <path d="M20.5 10 L10 25 H31 Z" fill="#321F01"/>
+        <circle cx="20.5" cy="21" r="18.5" stroke="#321F01" stroke-opacity="0.46" stroke-width="5"/>
+      </svg>
+      <p class="text-label">Dropdown Arrow: “Expand or collapse a menu of selectable options.”</p>
+    </div>
+
+    <!-- Home -->
+    <div class="legend-item">
+      <img src="images/node-83.png" class="icon" alt="Home icon">
+      <p class="text-label">Home: “Brings the user back to the main dashboard or starting page.”</p>
+    </div>
+
+    <!-- Login -->
+    <div class="legend-item">
+      <img src="images/node-84.png" class="icon" alt="Login icon">
+      <p class="text-label">Login: “Allows a user to securely access their account using credentials.”</p>
+    </div>
+
+    <!-- Upload -->
+    <div class="legend-item">
+      <img src="images/node-85.png" class="icon" alt="Upload icon">
+      <p class="text-label">Upload: “Select and send files from the device to the system.”</p>
+    </div>
+
+    <!-- Cancel -->
+    <div class="legend-item">
+      <img src="images/node-86.png" class="icon" alt="Cancel icon">
+      <p class="text-label">Cancel: “Stops the current action and returns to the previous state.”</p>
+    </div>
+
+    <!-- My Files -->
+    <div class="legend-item">
+      <img src="images/node-87.png" class="icon" alt="MyFiles icon">
+      <p class="text-label">MyFiles: “Displays all uploaded or saved files.”</p>
+    </div>
+
+    <!-- Settings -->
+    <div class="legend-item">
+      <img src="images/node-88.png" class="icon" alt="Settings icon">
+      <p class="text-label">Settings: “Allows users to configure and customize preferences.”</p>
+    </div>
+
+  </div>
+
+  <!-- Button -->
+  <a href="landing-page.html" class="prototype-btn">Go to Prototype →</a>
+
+  <p class="by-line">By: L’Empire GrabCoffee</p>
+</div>
+
+</body>
+</html>
